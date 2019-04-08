@@ -1,0 +1,25 @@
+.embed-responsive , .informationAbout{
+  position: relative;
+  top: -20px;
+}
+/***************/
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+/*********************/
+.informationAbout{
+  color: #a3b194; 
+  font-size: 25px;
+  text-align: center;
+   font-family: 'Signika', sans-serif; 
+   padding-bottom: 20px;
+  background-color: #1d191a;
+}
+.informationAbout{
+  display: none;
+}
