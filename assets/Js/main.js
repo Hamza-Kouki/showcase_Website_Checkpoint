@@ -15,3 +15,23 @@ $(function(){
   
     });
   });
+  /////////////////////
+ 
+  ////////////////////////////////////////
+  function information(valeur){
+    $(document).ready(function(e) {
+        $(valeur).click(function(){
+				$imgsrc=$('.img1 img').attr('src');
+				alert("Image Source Is :"+$imgsrc);
+			});
+    });
+  }
+
+/*
+  //alert message
+document.querySelector('.alert').style.display = 'block';
+
+//Hide alert after 3 seconds
+setTimeout(function(){
+    document.querySelector('.alert').style.display = 'none';
+},3000)*/
