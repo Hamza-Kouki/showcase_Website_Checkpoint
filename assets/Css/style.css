@@ -35,16 +35,27 @@
 .containers{
   width : 90%;
   height : 210px;
-  position: relative;
+ position: relative;
   display: flex;
   top : 20px; 
   left : 50px; 
 } 
 
 .containers p{
-  font-size: 2vmin;
+  font-size: 20px;
   text-align: center;
-  position:relative;
+
 }
 
-
+/*****************************/
+  .fade-ani{opacity:0;
+    position:relative;
+    transition:all ease-out .5s 0s;
+  }
+  .fade-left{left:-50px;}
+  .fade-right{right:-50px;}
+  
+  .fade-in.showing{opacity:1;}
+  .fade-left.showing{left:-0px;opacity:1;}
+  .fade-right.showing{right:-0px;opacity:1;}
+/***********************/
