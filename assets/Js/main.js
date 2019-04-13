@@ -15,21 +15,28 @@ $(function(){
   
     });
   });
-  /*============================================================================*/
+//////////------------------------------
 $(document).ready(function(){
-  $("button").click(function(){
-    $("p").hide();
+  $("#hideAndShow").click(function(){
+    $("#showElement").toggle();
   });
 });
-/*================================================================*/
-  function showImgUrl(){
-    var target = event.target /*|| event.srcElement*/;
-    var id = target.id
-    console.log(id);
-    /*console.log('for full image url ' + $(id).prop('src') );
-    console.log('for relative image url ' + $(id).attr('src'));*/
-  }
-  //////////////////////////////////////
+//////////------------------------------
+
+var temp , imgId ,imgSrc , strPath , imgChange ;
+function showImgUrl(temp){
+imgSrc = document.getElementById(temp).getAttribute('src');
+var str1 = '"';
+var str2 = imgSrc;
+var res = str1.concat(str2);
+var newImgSrc = res.concat(str1);
+var img = document.getElementById('toChange');
+img.setAttribute('src', newImgSrc);
+//---------------------------------------
+console.log(newImgSrc);
+alert(newImgSrc);
+}
+//////////////////////////////////////
   /*
   //alert message
 document.querySelector('.alert').style.display = 'block';

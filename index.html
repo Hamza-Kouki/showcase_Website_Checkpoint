@@ -13,7 +13,7 @@
    
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-static-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-static-top">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar3">
@@ -27,8 +27,8 @@
           </div>
           <div id="navbar3" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
+              <li class="active"><a href="#toGoTop">Home</a></li>
+              <li><a href="#" id="hideAndShow">About</a></li>
               <li><a href="#">Services</a></li>
               <li><a href="#">Port-Folio</a></li>
               <li><a href="#">Contact-Us</a></li>
@@ -37,14 +37,14 @@
         </div>
       </nav>
       <!-------------------------------------------------------------------------------------------->
-      <div class="informationAbout">
+      <div class="informationAbout" id="showElement">
           Informative. It doesn’t always have to tell the whole story,
            but it should at least provide people with an idea of who and what you are
       </div>
    <!-------------------------------------------------------------------------------------------->
   </video>
       <!-------->
-      <div class="embed-responsive embed-responsive-16by9">
+      <div class="embed-responsive embed-responsive-16by9" id="toGoTop">
         <video autoplay loop class="embed-responsive-item">
             <source src="assets/res/Video/SPIDER-MAN.mp4" type="video/mp4">
             </video>  
@@ -123,11 +123,12 @@
 
 <!---------------------------------->
 <div class="container ">
-  <div class=" row">
+  <div class=" row" id="gallery">
     <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
       <img src="assets/res/Images/one.jpg" alt="image" class="img-responsive" id="one">
       <div class="middle">
-        <div class="text" onclick="showImgUrl('#one')">Click to see</div>
+        <div class="text" onclick="showImgUrl('one')">Click to see</div>
+        <!---<div class="text" onclick="showImgUrl('#one')">Click to see</div>-->
       </div>
     </div>
 
