@@ -15,19 +15,22 @@ $(function(){
   
     });
   });
-  /////////////////////
- 
-  ////////////////////////////////////////
-  function information(valeur){
-    $(document).ready(function(e) {
-        $(valeur).click(function(){
-				$imgsrc=$('.img1 img').attr('src');
-				alert("Image Source Is :"+$imgsrc);
-			});
-    });
+  /*============================================================================*/
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").hide();
+  });
+});
+/*================================================================*/
+  function showImgUrl(){
+    var target = event.target /*|| event.srcElement*/;
+    var id = target.id
+    console.log(id);
+    /*console.log('for full image url ' + $(id).prop('src') );
+    console.log('for relative image url ' + $(id).attr('src'));*/
   }
-
-/*
+  //////////////////////////////////////
+  /*
   //alert message
 document.querySelector('.alert').style.display = 'block';
 
